@@ -1,0 +1,738 @@
+{ "changes" : [{
+"event_info":{
+"sequence":"1445699",
+"guid":"0021766FAE47D954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:41:26",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_AT",
+"new_value":"CREATED_AT" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"07\/07\/2023 15:12:27",
+"new_value":"10\/07\/2023 08:41:26" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = :NR_SEQUENCIA)",
+"new_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = a.NR_SEQUENCIA)" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445700",
+"guid":"002176A09F7BDA4EE06357FEA8C0551F",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:41:29",
+"table_name":"TABELA_SISTEMA_ATIVACAO",
+"dml_operation":"INSERT",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"310265025",
+"machine":"YY201915" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":null,
+"new_value":"79026" 
+}
+],
+"column_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":null,
+"new_value":"79026" 
+},
+{"column_name":"NM_USUARIO_NREC",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"brpsouza" 
+},
+{"column_name":"DT_ATUALIZACAO_NREC",
+"data_type":"DATE",
+"old_value":null,
+"new_value":"10\/07\/2023 08:40:10" 
+},
+{"column_name":"NM_USUARIO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"brpsouza" 
+},
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":null,
+"new_value":"10\/07\/2023 08:40:14" 
+},
+{"column_name":"NM_TABELA",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"SWCF_LOGSET" 
+},
+{"column_name":"NR_SEQ_VISAO",
+"data_type":"NUMBER",
+"old_value":null,
+"new_value":"116182" 
+},
+{"column_name":"DS_SQL",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"and a.guid in (select guid from cmdk_ext_logset where guid_package = :GUID_PACKAGE_P)" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445701",
+"guid":"0021766FAE48D954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:44:28",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"07\/07\/2023 14:44:39",
+"new_value":"10\/07\/2023 08:44:28" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"1",
+"new_value":"select\n    substr(nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')),1,255) nm_usuario_criacao\nfrom objeto_sistema\nwhere nr_sequencia = a.NR_SEQUENCIA" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445702",
+"guid":"0021766FAE49D954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:45:06",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:44:28",
+"new_value":"10\/07\/2023 08:45:06" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"select\n    substr(nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')),1,255) nm_usuario_criacao\nfrom objeto_sistema\nwhere nr_sequencia = a.NR_SEQUENCIA",
+"new_value":null 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445703",
+"guid":"0021766FAE4AD954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:50:56",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:45:06",
+"new_value":"10\/07\/2023 08:50:56" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"(select nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = a.NR_SEQUENCIA)" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445704",
+"guid":"0021766FAE4BD954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:55:26",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_AT",
+"new_value":"CREATED_AT" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:41:26",
+"new_value":"10\/07\/2023 08:55:26" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = a.NR_SEQUENCIA)",
+"new_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = :NR_SEQUENCIA)" 
+},
+{"column_name":"NM_ATRIBUTO_PAI",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"NR_SEQUENCIA" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445705",
+"guid":"0021766FAE4CD954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:55:32",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:50:56",
+"new_value":"10\/07\/2023 08:55:32" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = a.NR_SEQUENCIA)",
+"new_value":"(select nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = :NR_SEQUENCIA)" 
+},
+{"column_name":"NM_ATRIBUTO_PAI",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"NR_SEQUENCIA" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445706",
+"guid":"0021766FAE4DD954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:59:20",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_AT",
+"new_value":"CREATED_AT" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:55:26",
+"new_value":"10\/07\/2023 08:59:20" 
+},
+{"column_name":"DS_LABEL_GRID",
+"data_type":"VARCHAR2",
+"old_value":"Data cria\\00E7\\00E3o",
+"new_value":null 
+},
+{"column_name":"CD_EXP_LABEL_GRID",
+"data_type":"NUMBER",
+"old_value":"286653",
+"new_value":null 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445707",
+"guid":"0021766FAE4ED954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 08:59:25",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:55:32",
+"new_value":"10\/07\/2023 08:59:25" 
+},
+{"column_name":"DS_LABEL_GRID",
+"data_type":"VARCHAR2",
+"old_value":"Usu\\00E1rio cria\\00E7\\00E3o",
+"new_value":null 
+},
+{"column_name":"CD_EXP_LABEL_GRID",
+"data_type":"NUMBER",
+"old_value":"300965",
+"new_value":null 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445708",
+"guid":"0021766FAE4FD954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 09:01:44",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:59:25",
+"new_value":"10\/07\/2023 09:01:44" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC')) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = :NR_SEQUENCIA)",
+"new_value":"(select max(nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC'))) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = :NR_SEQUENCIA)" 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445709",
+"guid":"0021766FAE50D954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 09:03:59",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_AT",
+"new_value":"CREATED_AT" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 08:59:20",
+"new_value":"10\/07\/2023 09:03:59" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = :NR_SEQUENCIA)",
+"new_value":"(select\n    max(cmdk_get_system_object_info(nm_objeto,  'DTC')) dt_criacao\nfrom objeto_sistema\nwhere nr_sequencia = a.NR_SEQUENCIA)" 
+},
+{"column_name":"NM_ATRIBUTO_PAI",
+"data_type":"VARCHAR2",
+"old_value":"NR_SEQUENCIA",
+"new_value":null 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445710",
+"guid":"0021766FAE51D954E06357FEA8C07879",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 09:04:03",
+"table_name":"TABELA_VISAO_ATRIBUTO",
+"dml_operation":"UPDATE",
+"tasy_user":null,
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":null,
+"os_user":"320200229",
+"machine":"YY279733" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"BRAZILIAN PORTUGUESE_BRAZIL.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":"112532",
+"new_value":"112532" 
+},
+{"column_name":"NM_ATRIBUTO",
+"data_type":"VARCHAR2",
+"old_value":"CREATED_BY",
+"new_value":"CREATED_BY" 
+}
+],
+"column_values":[
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"10\/07\/2023 09:01:44",
+"new_value":"10\/07\/2023 09:04:03" 
+},
+{"column_name":"DS_VALORES",
+"data_type":"VARCHAR2",
+"old_value":"(select max(nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC'))) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = :NR_SEQUENCIA)",
+"new_value":"(select max(nvl(Obter_Nome_Usuario(cmdk_get_system_object_info(nm_objeto,  'NUC')), cmdk_get_system_object_info(nm_objeto,  'NUC'))) nm_usuario_criacao\nfrom objeto_sistema where nr_sequencia = a.NR_SEQUENCIA)" 
+},
+{"column_name":"NM_ATRIBUTO_PAI",
+"data_type":"VARCHAR2",
+"old_value":"NR_SEQUENCIA",
+"new_value":null 
+}
+]
+}
+,{
+"event_info":{
+"sequence":"1445711",
+"guid":"00223595144FB136E06357FEA8C09987",
+"tag_name":"DELOREAN_OS2869192",
+"date":"10\/07\/2023 09:34:53",
+"table_name":"OBJETO_SISTEMA",
+"dml_operation":"INSERT",
+"tasy_user":"tecwriter",
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":"tecwriter",
+"os_user":"tomcat",
+"machine":"srv-tomcat.whebdc.com.br" 
+}
+,
+"server_info":{
+"instance_name":"phcdb5",
+"database_version":"19.0",
+"charset":"AMERICAN_AMERICA.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"NM_OBJETO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"PABC_INDICE_VALIDA_NM2" 
+},
+{"column_name":"IE_BANCO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"Oracle" 
+}
+],
+"column_values":[
+{"column_name":"NM_OBJETO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"PABC_INDICE_VALIDA_NM2" 
+},
+{"column_name":"DS_APLICACAO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"Tasy" 
+},
+{"column_name":"IE_TIPO_OBJETO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"Trigger" 
+},
+{"column_name":"NM_USUARIO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"tecwriter" 
+},
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":null,
+"new_value":"10\/07\/2023 09:34:53" 
+},
+{"column_name":"IE_GERAR_SCRIPT",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"S" 
+},
+{"column_name":"IE_BANCO",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"Oracle" 
+},
+{"column_name":"IE_MEMORIA",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"N" 
+},
+{"column_name":"NR_SEQUENCIA",
+"data_type":"NUMBER",
+"old_value":null,
+"new_value":"10103865" 
+},
+{"column_name":"IE_CRIPTOGRAFIA",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"N" 
+},
+{"column_name":"DS_LAYER",
+"data_type":"VARCHAR2",
+"old_value":null,
+"new_value":"CORE.PARTNERABC" 
+}
+]
+}
+]}
